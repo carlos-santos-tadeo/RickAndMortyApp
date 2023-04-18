@@ -60,18 +60,18 @@ function App() {
           <img className='absolute w-[200px] top-[20px] sm:w-[345px] sm:top-[60px] lg:w-[390px] animate-bounce' src="/images/title2.png" alt="" />
         </div>
         <div className='flex relative justify-center pt-[140px] sm:pt-[50px]'>
-          <input onChange={onChange} className='border-[1px] border-green-500 bg-transparent text-white text-center font-bold sm:w-[300px] sm:h-[30px] lg:w-[450px] lg:h-[37px]' id='locationId' placeholder='Type a location Id...' type="text" />
-          <button className='border-solid border-[1px] hover:animate-bounce border-green-500 bg-green-500/50'>
+          <input onChange={onChange} className='border-[1px] shadow shadow-slate-50 border-green-500 bg-transparent text-white text-center font-bold sm:w-[300px] sm:h-[30px] lg:w-[450px] lg:h-[37px]' id='locationId' placeholder='Type a location Id...' type="text" />
+          <button className='border-solid shadow shadow-slate-50 border-[1px] hover:animate-bounce border-green-500 bg-green-500/50'>
             <i className='bx bx-search w-10 text-white hover:animate-ping'></i>
           </button>
         </div>
         <h2 className='text-green-500 font-bold text text-center py-8 sm:text-[23px] lg:text-[30px]'>Wellcome to the crazy universe!</h2>
       </form>
       <div className='flex flex-col items-center py-4'>
-        <div className='search-container text-center border-gray-400 border-[1px] w-[250px] lg:text-[17px] lg:w-[350px]'>
+        <div className=' text-center hover:shadow-lg hover:shadow-white border-gray-400 border-[1px] w-[250px] lg:text-[17px] lg:w-[350px]'>
             {
               location2.map((name) => (
-                <div key={name.id} onClick={() => handleSubmitChange(name.id)} className='dropdown-row hover:bg-green-700 text-white' >{name.name}</div>
+                <div key={name.id} onClick={() => handleSubmitChange(name.id)} className=' hover:bg-green-700 text-white hover:animate-bounce' >{name.name}</div>
                 
               )).slice(0,5)
             }
