@@ -19,7 +19,7 @@ const ResidentCard = ({ resident }) => {
 
 
   return (
-    <article className='card'>
+    <article className='card animate-pulse shadow-lg shadow-teal-200'>
       <div className='relative border-[2px] border-green-600'>
         <img className='w-full' src={residentInfo?.image} alt="" />
         <div className='border-[1px] border-green-600 absolute bottom-10 left-1/2 -translate-x-1/2 bg-[#020A02]/60 text-white p-1 px-2 flex gap-2 items-center rounded-sm'>
