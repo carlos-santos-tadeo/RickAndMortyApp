@@ -34,23 +34,13 @@ const ResidentList = ({ location }) => {
             <ResidentCard key={resident} resident={resident} />
           ))}
       </section>
-      <ul className='flex gap-4 justify-center py-4 text-white'>
+      <ul className='flex gap-4 justify-center py-4 text-white cursor-pointer'>
         {
-          arrayPages.map(page => <li onClick={() => setCurrentPage(page)} className={`p-3 rounded-md ${page === currentPage && "bg-green-700 text-white font-bold"}`} key={page}>{page}</li>)
+          arrayPages.map(page => <li onClick={() => setCurrentPage(page)} className={`p-3 rounded-md ${page === currentPage && "bg-green-700 text-white font-bold "}`} key={page}>{page}</li>)
         }
       </ul>
 
-      {location?.residents.length > 1 ?
-        <img className='absolute opacity-60 right-0 top-[380px] w-[200px] sm:top-[400px] lg:top-[760px]' src="/images/ellipse2.png" alt="" /> : <br />
-      }
 
-      {location?.residents.length > 8 ?
-          <img className='absolute top-[900px] w-[560px] opacity-40' src="/images/ellipse3.png" alt="" /> : <br />
-      }
-
-      {location?.residents.length > 15 ?
-        <img className='absolute opacity-60 right-0 top-[2200px] w-[250px] lg:top-[1900px]' src="/images/ellipse2.png" alt="" /> : <br />
-      }
 
     </>
   )

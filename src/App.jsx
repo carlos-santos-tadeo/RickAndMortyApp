@@ -68,10 +68,10 @@ function App() {
         <h2 className='text-green-500 font-bold text text-center py-8 sm:text-[23px] lg:text-[30px]'>Wellcome to the crazy universe!</h2>
       </form>
       <div className='flex flex-col items-center py-4'>
-        <div className=' text-center hover:shadow-lg hover:shadow-white border-gray-400 border-[1px] w-[250px] lg:text-[17px] lg:w-[350px]'>
+        <div className=' text-center hover:shadow-lg rounded hover:shadow-slate-400 border-gray-400 border-[1px] w-[250px] lg:text-[17px] lg:w-[350px]'>
             {
               location2.map((name) => (
-                <div key={name.id} onClick={() => handleSubmitChange(name.id)} className=' hover:bg-green-700 text-white hover:animate-bounce' >{name.name}</div>
+                <div key={name.id} onClick={() => handleSubmitChange(name.id)} className='rounded hover:bg-blue-900 text-white hover:animate-bounce' >{name.name}</div>
                 
               )).slice(0,5)
             }

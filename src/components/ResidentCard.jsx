@@ -19,15 +19,15 @@ const ResidentCard = ({ resident }) => {
 
 
   return (
-    <article className='shadow-lg shadow-teal-200'>
-      <div className='relative border-[2px] border-green-600 animate-pulse'>
+    <article className=' shadow-lg shadow-slate-500 z-50'>
+      <div className='relative border-[3px] border-blue-900 rounded-t'>
         <img className='w-full' src={residentInfo?.image} alt="" />
         <div className='border-[1px] border-green-600 absolute bottom-10 left-1/2 -translate-x-1/2 bg-[#020A02]/60 text-white p-1 px-2 flex gap-2 items-center rounded-sm'>
           <div className={`w-3 h-3 ${residentsStatus[residentInfo?.status]} rounded-full`}></div>
           <span>{residentInfo?.status}</span>
         </div>
       </div>
-      <section className='border-[2px] border-green-600 h-[168px] '>
+      <section className='border-[2px] border-blue-900 h-[168px] rounded-b'>
         <h3 className='text-white font-bold text-lg text-left px-5 '>{residentInfo?.name}</h3>
         <ul className='py-2'>
           <li className='py-1 px-3'>
